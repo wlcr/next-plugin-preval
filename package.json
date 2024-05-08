@@ -1,7 +1,7 @@
 {
-  "name": "next-plugin-preval",
-  "version": "0.0.0",
-  "description": "",
+  "name": "@wlcr/next-plugin-preval",
+  "version": "1.2.6",
+  "description": "Pre-evaluate async functions (for data fetches) at build time and import them like JSON",
   "keywords": [
     "next",
     "next.js",
@@ -9,14 +9,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/ricokahler/next-plugin-preval.git"
+    "url": "git+https://github.com/ricokahler/next-plugin-preval.git"
   },
   "license": "MIT",
-  "author": {
-    "name": "Rico Kahler",
-    "email": "ricokahler@me.com",
-    "url": "https://github.com/ricokahler"
-  },
+  "author": "Rico Kahler <ricokahler@me.com> (https://github.com/ricokahler)",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
@@ -41,13 +37,14 @@
   },
   "devDependencies": {
     "@babel/cli": "7.24.5",
+    "@babel/eslint-parser": "7.24.5",
     "@babel/preset-typescript": "7.24.1",
     "@types/babel__core": "7.20.5",
     "@types/jest": "26.0.24",
     "@types/require-from-string": "1.2.3",
     "@typescript-eslint/eslint-plugin": "4.33.0",
     "@typescript-eslint/parser": "4.33.0",
-    "@babel/eslint-parser": "7.24.5",
+    "babel-cli": "^6.26.0",
     "eslint": "7.32.0",
     "eslint-config-react-app": "6.0.0",
     "eslint-plugin-flowtype": "5.10.0",
@@ -65,5 +62,12 @@
   },
   "peerDependencies": {
     "next": "^9 || ^10 || ^11 || ^12.0.0 || ^13 || ^14"
-  }
+  },
+  "directories": {
+    "example": "examples"
+  },
+  "bugs": {
+    "url": "https://github.com/ricokahler/next-plugin-preval/issues"
+  },
+  "homepage": "https://github.com/ricokahler/next-plugin-preval#readme"
 }
